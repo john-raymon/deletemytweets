@@ -1,0 +1,31 @@
+@import 'fontface';
+
+$mermaid-bold: 'Mermaid Bold', sans-serif;
+
+// type for large text on heros/headers
+.display-text {
+  font-family: $mermaid-bold;
+  font-size: 8rem;
+  line-height: 7.75rem;
+}
+
+// type for subtitles or small titles
+.small-title {
+  font-family: $mermaid-bold;
+  font-size: 1.68rem;
+  line-height: 2rem;
+}
+
+// type for large titles that aren't display text-transform
+.large-title {
+  font-family: $mermaid-bold;
+  font-size: 4.40rem;
+  line-height: 5.30rem;
+}
+
+// type for medium body text
+.medium-body-text {
+  font-family: $mermaid-bold;
+  font-size: 2.18rem;
+  line-height: 3.68rem;
+}

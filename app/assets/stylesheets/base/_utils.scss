@@ -1,0 +1,191 @@
+.list-style-none {
+  list-style: none;
+}
+
+.border {
+  border: 3px solid color('black');
+}
+
+.border-thin {
+  border: 1px solid color('black');
+}
+.border-none {
+  border: 0px;
+}
+
+.border-bottom-active-link {
+  border-bottom: 4px solid color('black');
+}
+
+.min100vh {
+  min-height: 100vh;
+}
+
+.maxh100 {
+  max-height: 100%;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.vh100 {
+  height: 100vh;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bg-cover-center {
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-position-y-0 {
+  background-position-y: 0%;
+}
+
+.bg-position-x-50 {
+  background-position-x: 50%;
+}
+
+.absolute-cover {
+  @extend .bg-cover-center;
+  @extend .overlay;
+  z-index: -1;
+}
+
+.fixed-cover {
+  @extend .absolute-cover;
+  position: fixed;
+  z-index: z('overlay');
+}
+
+.circle {
+  border-radius: radius('circle');
+  overflow: hidden;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.t0 {
+  top: 0;
+}
+
+.r0 {
+  right: 0;
+}
+
+.b0 {
+  bottom: 0;
+}
+
+.l0 {
+  left: 0;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.events-none {
+  pointer-events: none;
+}
+
+.events-all {
+  pointer-events: all;
+}
+
+.flex-grow {
+  flex: 1 0 auto;
+}
+
+.none {
+  display: none;
+}
+
+.max-width-5 {
+  max-width: 75rem;
+}
+
+.max-width-6 {
+  max-width: 90rem;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.grayscale {
+  filter: grayscale(1);
+}
+
+.background-none {
+  background: none;
+}
+
+.mtn3 {
+  margin-top: spacing(-3);
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+}
+
+.label-adjust-y {
+  position: relative;
+  top: -2px;
+}
+
+.bolder {
+  font-weight: 800;
+}
+
+.flex-rows {
+  flex-direction: row;
+}

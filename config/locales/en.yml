@@ -30,4 +30,7 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  homepage:
+    hero:
+      title: "We all have embarassing Tweets. Get to them before They do."
+      subtitle: "securely login with your twitter & begin deleting any cringey tweets you’ve ever tweeted"

@@ -1,0 +1,30 @@
+<div class="Homepage__hero-container bg-wash-blue flex flex-column justify-between w100 overflow-hidden">
+  <div class="flex-grow flex flex-column justify-center pt3">
+    <p class="display-text text-weird-black max-width-5 mx-auto center">
+      <%= t('homepage.hero.title') %>
+    </p>
+    <p class="small-title text-light-blue-other max-width-3 center mx-auto pt2">
+      <%= t('homepage.hero.subtitle') %>
+    </p>
+  </div>
+  <div class="flex flex-rows flex-grow justify-center">
+    <div class="Homepage__hero-container__tweets-image-wrapper flex flex-column self-end">
+      <%= render "shared/svgs/hero_tweets" %>
+    </div>
+  </div>
+</div>
+
+<div class="About__container bg-weird-gray w100 py4 flex flex-column">
+    <p class="large-title text-white self-center py4">How does this
+      <span class="block">
+        work ?
+      </span>
+      <span class="About__container__inner-body-text text-white inline-block max-width-2 medium-body-text">
+        Since our platform is verified & approved
+        by Twitter, we’re then allowed to make secure request to the Twitter platform on behalf of a User. Once you securely log into Twitter, you will then be able to make smart searches with keywords populated by our Team, for Tweets you’ve composed that contain embarassing or provacative old tweets.You can also search by your own keywords, and save those keywords. After you collect the ‘embarassing’ tweets, you can delete them in bulk.
+        <span class="block">
+          Just Like That.
+        </span>
+      </span>
+    </p>
+</div>

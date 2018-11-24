@@ -1,0 +1,41 @@
+$colors: (
+  'white': #fff,
+  'black': #000,
+  'black-wash': rgba(0, 0, 0, 0.8),
+  'white-wash': rgba(255, 255, 255, 0.5),
+  'light-gray': #d3d3d3,
+  'dark-gray': #222,
+  'light-blue': #4d66ff,
+  'blue': #3d51ff,
+  'dark-blue': #3046ce,
+  'orange': #ff4f2c,
+  'green': #3dffbc,
+  'red': #ff4f2c,
+  'wash-blue': #EFF1F3,
+  'weird-black': #272727,
+  'light-blue-other': #2589BD,
+  'weird-gray': #404040,
+  'transparent': transparent,
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+@each $name, $color in $colors {
+  .text-#{$name} {
+    color: #{$color};
+  }
+
+  .bg-#{$name} {
+    background-color: #{$color};
+  }
+
+  .fill-#{$name} {
+    fill: #{$color};
+  }
+
+  .border-#{$name} {
+    border-color: #{$color};
+  }
+}
